@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css" />
+    <title>Congrats!</title>
+    <style>
+        body {
+          background-image: url("img/pngtree.jpg");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+
+        </style>
+</head>
+<body >
+     <div class="container">
+         <div id="end" class="flex-center flex-column">
+            <h1>You've completed the Quiz!  </h1>
+            <h1 id="finalScore"></h1> <!--0 par default-->
+            <form>
+                <input 
+                type="text" 
+                name="username" 
+                id="username"
+                placeholder="username" 
+                />
+                <button 
+                type="submit" 
+                class="btn" 
+                id="saveScoreBtn" 
+                onclick = "saveHighScore(event)" 
+                disabled 
+                        />
+                     Save
+                </button>
+            </form>
+           
+            <a class="btn" href="index.html" >Go Home</a>
+         </div>
+     </div>
+
+
+     <script src="js/end.js"></script>
+</body>
+</html>
